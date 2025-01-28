@@ -1,0 +1,224 @@
+/* Estilos globales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Header y Footer */
+header, footer {
+    background-color: rgb(74, 74, 74);
+    color: rgb(140, 179, 191);
+    text-align: center;
+    padding: 1rem 0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: rgb(140, 179, 191);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(140, 179, 191);
+    text-decoration: none;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 0.9rem;
+}
+
+/* Carrusel */
+.contenedor_carrusel {
+    position: relative;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 15px;
+}
+
+.imagen_carrusel {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 15px;
+}
+
+.imagen_carrusel.active {
+    display: block;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flecha.anterior {
+    left: 10px;
+}
+
+.flecha.siguiente {
+    right: 10px;
+}
+
+/* Opciones menú */
+.opciones_menu {
+    text-align: center;
+    margin: 2rem auto;
+    width: 80%;
+}
+
+.opciones_menu h2 {
+    margin-bottom: 1rem;
+    color: #333333;
+}
+
+.contenedor_opciones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.boton_opcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333333;
+    padding: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+
+.boton_opcion:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.boton_opcion img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 0.5rem;
+}
+
+/* Pagina login */
+body.login-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor_login {
+    background: rgb(74, 74, 74);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(140, 179, 191);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.contenedor_login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(140, 179, 191);
+}
+
+.grupo_formulario {
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grupo_formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.grupo_formulario input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grupo_formulario input:focus {
+    outline: none;
+}
+
+.Boton_Login {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(140, 179, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Boton_Login:hover {
+    background-color: #66a1b1;
+}
